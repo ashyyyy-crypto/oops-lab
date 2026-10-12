@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+inline double square (double x)
+{
+    return x * x;
+}
+double area (double r )
+{
+    return 3.14 * r * r;
+}
+int area (int l, int b)
+{
+    return l * b;
+}
+double area (double l, double b)
+{
+    return 0.5*l * b;
+}
+int main()
+{
+    
+    cout << "Square (3.8) = " << square(3.8) << endl;
+    cout << "Area of circle with radius " << 2.0 << " is " << area(2.0) << endl;
+    cout << "Area of rectangle with length " << 4 << " and breadth " << 5 << " is " << area(4 ,5) << endl;
+    cout << "Area of triangle = " << area(4.0, 5.0) << endl;
+    return 0;
+}
